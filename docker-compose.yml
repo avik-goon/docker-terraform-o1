@@ -31,3 +31,11 @@ services:
       - pg-network
     volumes:
       - ./pgadmin-data:/var/lib/pgadmin
+
+# create docker network
+# docker network create pg-network
+# Give write permission
+# sudo chown -R 999:999 ./ny_taxi_postgres_data
+# sudo chmod -R 775 ./ny_taxi_postgres_data
+# sudo chown -R 5050:5050 ./pgadmin-data
+# sudo chmod -R 775 ./pgadmin-data
