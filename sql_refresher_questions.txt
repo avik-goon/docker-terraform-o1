@@ -49,7 +49,7 @@ Here’s a structured SQL questionnaire based on your schemas, with three diffic
 
 ---
 
-## **Low Difficulty**  
+ ## **Low Difficulty**  
 1. Retrieve all pickup locations along with their corresponding borough names.  
 2. Get a list of all drop-off zones along with their boroughs.  
 3. Retrieve the total number of trips for each borough based on the pickup location.  
