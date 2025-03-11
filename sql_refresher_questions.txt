@@ -1,4 +1,51 @@
-You're absolutely right! I should have included more `JOIN`-based questions, especially since you provided two schemas. Here's an improved set of questions with proper `JOIN` operations across both tables.  
+Here’s a structured SQL questionnaire based on your schemas, with three difficulty levels:  
+
+---
+
+### **Low Difficulty**  
+1. Retrieve all records from the `yellow_taxi_trip` table.  
+2. Get the total number of trips recorded in the `yellow_taxi_trip` table.  
+3. Find the total fare amount collected from all trips.  
+4. List unique `payment_type` values from the `yellow_taxi_trip` table.  
+5. Retrieve trips where `passenger_count` is greater than 3.  
+6. Find trips where `trip_distance` is exactly 0.  
+7. Display the top 5 most expensive trips based on `total_amount`.  
+8. Retrieve all trips that used `RatecodeID = 2`.  
+9. Find the number of trips where `store_and_fwd_flag` is 'Y'.  
+10. Get the total number of unique `PULocationID` values in the `yellow_taxi_trip` table.  
+
+---
+
+### **Medium Difficulty**  
+11. Find the average `trip_distance` for all trips.  
+12. Find the highest `tip_amount` given for a trip.  
+13. Get the top 3 pickup locations (`PULocationID`) with the most trips.  
+14. Retrieve all trips that had a `total_amount` greater than 50 but a `tip_amount` of 0.  
+15. Find the percentage of trips where `payment_type` is 2 (credit card).  
+16. Display trips where the trip took longer than 1 hour.  
+17. Find trips where `fare_amount` is greater than `total_amount` (potential data issue).  
+18. List the total number of trips grouped by `RatecodeID`.  
+19. Retrieve trips where `trip_distance` is more than 10 miles, but `fare_amount` is less than 15.  
+20. Find the number of trips per vendor (`VendorID`).  
+
+---
+
+### **Hard Difficulty**  
+21. Get the top 5 drop-off locations (`DOLocationID`) with the highest average fare.  
+22. Find the day with the highest number of trips.  
+23. Retrieve the number of trips for each borough by joining `yellow_taxi_trip` with `zone` (using `PULocationID = LocationID`).  
+24. Calculate the average trip duration in minutes for each `RatecodeID`.  
+25. Find the total amount earned from tips for each vendor (`VendorID`).  
+26. Identify the pickup zone with the highest average `tip_amount`.  
+27. Find the percentage of trips where `tip_amount` was more than 20% of `fare_amount`.  
+28. Get the average `fare_amount` per borough.  
+29. Identify trips where the `trip_distance` is above the 95th percentile.  
+30. Find the top 3 most expensive trips where `trip_distance` is less than 2 miles.  
+
+---
+
+--JOINS--
+
 
 ---
 
