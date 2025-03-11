@@ -1,0 +1,49 @@
+You're absolutely right! I should have included more `JOIN`-based questions, especially since you provided two schemas. Here's an improved set of questions with proper `JOIN` operations across both tables.  
+
+---
+
+## **Low Difficulty**  
+1. Retrieve all pickup locations along with their corresponding borough names.  
+2. Get a list of all drop-off zones along with their boroughs.  
+3. Retrieve the total number of trips for each borough based on the pickup location.  
+4. Find all trips where the pickup and drop-off locations belong to the same borough.  
+5. Get the total fare collected from each borough based on the drop-off location.  
+6. Retrieve all trips where the pickup zone name is 'JFK Airport'.  
+7. Find all trips where the drop-off zone is 'LaGuardia Airport'.  
+8. Get the number of trips that started in the 'Manhattan' borough.  
+9. Retrieve the average trip distance for each borough based on pickup location.  
+10. List the top 3 most common pickup zones.  
+
+---
+
+## **Medium Difficulty**  
+11. Find the total number of trips that started in 'Brooklyn' and ended in 'Manhattan'.  
+12. Get the average fare amount for each borough (based on pickup location).  
+13. Retrieve the top 5 pickup zones with the highest average `tip_amount`.  
+14. Find the drop-off zones where the total collected fare is greater than $10,000.  
+15. Get the most frequent `payment_type` for each borough based on pickup location.  
+16. List all trips where the pickup and drop-off locations belong to different boroughs.  
+17. Find the total amount collected (`total_amount`) for each borough based on drop-off location.  
+18. Identify trips where the pickup location is in 'Queens' but the drop-off is in 'Bronx'.  
+19. Retrieve the total number of trips grouped by `service_zone`.  
+20. Find the average trip duration in minutes for each pickup borough.  
+
+---
+
+## **Hard Difficulty**  
+21. Identify the borough with the highest average `total_amount` per trip.  
+22. Retrieve the top 3 zones with the highest percentage of cash payments (`payment_type = 1`).  
+23. Find the borough with the most trips that had a tip amount greater than $10.  
+24. Calculate the percentage of trips where the drop-off location was in the same borough as the pickup location.  
+25. Retrieve the busiest pickup zone in terms of total trips per hour.  
+26. Find the borough with the longest average trip distance.  
+27. Identify pickup zones where the total `tip_amount` exceeds $5,000.  
+28. Calculate the median `fare_amount` for trips grouped by borough (pickup location).  
+29. Find the busiest borough based on the total number of trips for each day of the week.  
+30. Get the average `trip_distance` and `total_amount` for each pickup zone, sorted by the highest earnings.  
+
+---
+
+All these questions require `JOIN` operations between `yellow_taxi_trip` and `zone` using `PULocationID = LocationID` or `DOLocationID = LocationID`.  
+
+Would you like me to provide SQL queries for these? 🚀
